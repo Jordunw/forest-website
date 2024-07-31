@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(29, 29, 29);
+    font-family: Franklin Gothic Medium;
+    /*background: -webkit-linear-gradient(bottom right, #232526, #414345);*/
+    color: white;
+}
+
+.title-headers-container{
+    width: 100%;
+    background-image: url("../../public/img/homepage.jpg");
+    background-repeat: no-repeat;
+    position: fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+.title-img{
+    left: 0;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.main-header, .main-header-2, .sub-header, .sub-sub-header{
+    min-width: 70%;
+    margin: 10px 15%;
+    text-align: left;
+    font-size: 7em;
+    color: rgb(29, 29, 29);
+    margin-bottom: 0px;
+    font-family: Cambria;
+    /*
+    background: -webkit-linear-gradient(right, #a73737, #7a2828);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    */
+}
+
+.main-header {
+    padding-top: 1%;
+}
+
+.sub-header {
+    font-size: 1.5em;
+    padding-top: .5%;
+}
+
+.sub-sub-header {
+    font-size: 1.2em;
+    white-space: pre;
+}
+
+.main-header-2{
+    color: #75b951;
+}
+
+.main-subheader{
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 40px;
+    color: #75b951;
+}
+
+.fade-in__content{
+    opacity: 0;
+    transform: translateY(20vh);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+    will-change: opacity, visibility;
+}
+
+.fade-in__content .is-visible{
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+.main-content{
+    font-size: 16px;
+    color: #75b951;
+    text-align: center;
+    font-family: Franklin Gothic Medium;
+}
