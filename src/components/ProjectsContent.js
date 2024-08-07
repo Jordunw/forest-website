@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect } from "react";
 import ImageSlider from "./common/imageslider";
 
 // TODO: finish this
@@ -39,5 +39,12 @@ function createProjectItem() {
 }
 
 export default function ProjectsContent() {
-  return <div className="main-content"><h3>Projects</h3>Under construction...</div>;
+  useEffect(() => {
+    document.title = "Projects - Forest McKinney";
+  }, []);
+  return (
+    <div className="main-content">
+      <h3>Projects</h3>Under construction...
+    </div>
+  );
 }

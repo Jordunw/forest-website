@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import resume from "../media/Forest_McKinney_2024_Resume.pdf";
 
 export default function ContactContent() {
+  useEffect(() => {
+    document.title = "Contact - Forest McKinney";
+  }, []);
   return (
     <div className="main-content">
       <span>
